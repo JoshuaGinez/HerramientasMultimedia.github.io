@@ -211,6 +211,13 @@ text-align: center;
 .campo{
     margin-bottom: 1rem;
 }
+#temario :link{
+    color:black
+    font-family: 'Indie Flower', cursive;
+}
+a:visited {
+    color: black;
+}
 .campo label{
     color: #DFE9F3;
     font-weight: bold;
