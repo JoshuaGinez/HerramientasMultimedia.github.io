@@ -1,7 +1,8 @@
 html{
     font-size: 62.%;
     box-sizing: border-box;
-    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
 }
 *, *:before, *:after{
         box-sizing: inherit;
@@ -24,6 +25,10 @@ html{
   .center-text {
     text-align: center;
  }
+ .iconos{
+    width: .5rem;
+    height: .5rem;
+}
 body{
    font-size: 16px; 
    background-image: linear-gradient(to top, #DFE9F3 0%, #fff 100%);
@@ -53,9 +58,10 @@ h1,h2,h3{
     background-color:#fff ;
     padding: 2rem;
 }
-.titulo span{
+.titulo {
     font-size: 2rem;
 }
+
 .contenedor{
     max-width: 120rem;
     margin: 0 auto ;
@@ -90,6 +96,7 @@ h1,h2,h3{
     color: black;
 }
 
+
 @media (min-width: 768px){
     *{
         font-size: 1.5rem;
@@ -112,6 +119,9 @@ h1,h2,h3{
 #UPIICSA{
     font-size: 1.5rem;
 }
+boton #linea{
+    text-align: center;
+}
 .hero{
     background-image: url(/sources/img/background.jfif);
     background-repeat: no-repeat;
@@ -131,6 +141,7 @@ h1,h2,h3{
     justify-content: center;
 }
 .boton{
+    text-align: center;
     background-color: whitesmoke;
     color: black;
     padding: 1rem 3rem;
@@ -145,7 +156,10 @@ h1,h2,h3{
     border: none;
 }
 .boton:hover{
+    text-align: center;
+
     cursor: pointer;
+    background-color: gray;
 }
 @media (min-width: 670px){ 
     .boton{
@@ -241,3 +255,27 @@ border-radius: .5rem;
     width: 100%
 
 }
+.general{
+    overflow-y: auto;
+}
+.galleria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  
+  .tarjetas {
+    width: 20rem;
+    text-align: center;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.67);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.67);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.67);
+    background-color:#fff ;
+    padding: 2rem;
+  }
+  .foto{
+    width: 15rem;
+    height: 15rem;
+  }

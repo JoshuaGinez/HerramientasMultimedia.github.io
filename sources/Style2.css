@@ -1,0 +1,134 @@
+html{
+    font-size: 62.%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+*, *:before, *:after{
+        box-sizing: inherit;
+    }
+
+*{
+    font-size: 1.2rem;
+}
+
+body{
+    font-size: 16px; 
+
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif; /*XD*/
+    background-color: whitesmoke;
+}
+.Titulo h1{
+    text-align: center;
+    font-size:  3rem;
+    }
+.LineaDeTiempo{
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+}
+.LineaDeTiempo::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+}
+.LineaDeTiempo ul{
+    margin: 0;;
+    padding: 0;
+}
+.LineaDeTiempo ul li{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.LineaDeTiempo ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+.LineaDeTiempo ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+.Contenido{
+    padding-bottom: 20px;
+     
+}
+.LineaDeTiempo ul li:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: #967e02;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #f3cc04;
+}
+.LineaDeTiempo ul li:nth-child(even):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: #967e02;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #f3cc04;
+}
+.LineaDeTiempo ul li h3{
+    margin: 0;
+    padding: 0;
+    color:whitesmokes;
+}
+.LineaDeTiempo ul li p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+.LineaDeTiempo ul li .fecha{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.LineaDeTiempo ul li:nth-child(odd) .fecha{
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0 ;
+    padding: 8px 16px;
+    background-color:#047c3c;
+    color: black;
+    border-radius: 18px;
+}
+.LineaDeTiempo ul li:nth-child(even) .fecha{
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin: 0 ;
+    padding: 8px 16px;
+    background-color:#047c3c;
+    color: blac;
+    border-radius: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
