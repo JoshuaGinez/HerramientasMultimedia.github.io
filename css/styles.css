@@ -17,7 +17,18 @@ body {
     justify-content: space-between;
     margin: auto;
 }
-
+.btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+  }
 
 .logo img {
     width: 80px;
@@ -81,7 +92,7 @@ article {
     margin-bottom: 40px;
 }
 article {
-    max-width: 600px;
+    max-width: 100%;
     margin: 20px auto;
     padding: 20px;
     background-color: #f9f9f9;
