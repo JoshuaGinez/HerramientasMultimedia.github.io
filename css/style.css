@@ -1,9 +1,4 @@
-html{
-    font-size: 62.%;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    scroll-padding: 10rem;
-}
+
 *, *:before, *:after{
         box-sizing: inherit;
     }
@@ -12,6 +7,8 @@ html{
     font-size: .7rem;
 }
 .container {
+    position: fixed;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,10 +73,13 @@ h1,h2,h3{
     justify-content: flex-end;
 }
 .navBg{
+    position: fixed;
     background-color: #047c3c;
     color: #fce87c;
 }
 .menu-navegacion {
+    position: fixed;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;

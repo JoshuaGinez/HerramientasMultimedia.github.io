@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.text {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: auto;
+    width: 90%;
+    display: block;
+
+}
+
+.navigation ul li {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.navigation ul li a {
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.navigation ul li a:hover{
+    background-color: #45a049;
+
+}
+section {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-container {
+    display: fixed;
+    align-items: right;
+    margin-right: 50px;
+}
+
+.button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    right: 20px;
+    text-decoration: none;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px 0;
+}
+.carousel-container {
+    margin-top: 200px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

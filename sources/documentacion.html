@@ -1,46 +1,48 @@
 <!DOCTYPE html>
-<html lang="esp">
+<html>
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-
-    <title>documentacion </title>
-
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container"> 
-        <img class="left-image" src="./img/Logo_IPN.png">
-        <a id="temario" href="./img/Temario.pdf"><h1 class="titulo center-text">Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas</h1></a>
-        <img class="right-image "src="./img/Upiicsa.png">
-    </div>
-
-    <div class="navBg">
-    <nav class="menu-navegacion contenedor">
-        <a href="../index.html">Pagina principal</a>
-        <a href="./Creditos.html">Creditos</a>
-        <a href="./documentacion.html">articulo</a>
+    <div class="header">
+        <div class="logo">
+            <img src="./img/Logo_IPN.png" alt="Logo 1">
+        </div>
     
-    </nav>
-
+        <div class="text">
+            <h1>Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas</h1></div>
+        <div class="logo">
+            <img src="./img/Upiicsa.png" alt="Logo 2">
+        </div>
+        <div class="menu-navegacion">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-</header>
+    <div class="carousel-container">
+        <div class="carousel-slide">
+           < <img src="./img/Joshua.jpg" alt="Imagen 1">>
+        </div>
+        <div class="carousel-slide">
+            <img src="./img/Uriel.jfif" alt="Imagen 2">
+        </div>
+        <div class="carousel-slide">
+            <img src="./img/Logo_IPN.png" alt="Imagen 3">
+        </div>
 
-
-
-
-        </main>
+        <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
     </div>
+
     <footer>
-        <h2>Agradecemos su visita</h2>
-        <p>Todos los derechos reservados al Equipo 5</p>
+        <p>Equipo de imágenes</p>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
