@@ -29,6 +29,11 @@ body {
     font-weight: bold;
     text-align: center;
   }
+  .btn:hover {
+ background-color: #e0ebeb;
+ color: #3498db;
+  }
+
 
 .logo img {
     width: 80px;
@@ -265,3 +270,14 @@ audio {
     top: -52px;
     left: 20px;
   }
+  .video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
